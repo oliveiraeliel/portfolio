@@ -4,12 +4,10 @@ export const ProjectsIntroBody = styled.section`
   height: 100vh;
   display: flex;
   flex-direction: row;
-  h1
+
 `;
 
-// export const SideFig = styled.div`
-//   flex: 2;
-// `;
+
 
 export const SideText = styled.div`
   flex: 1;
@@ -41,7 +39,4 @@ export const Text = styled.div`
     font-weight: 500;
   }
 
-  /* .text.animate {
-    animation: appear 1s ease-in 0.5s 1 backwards;
-  } */
 `;
