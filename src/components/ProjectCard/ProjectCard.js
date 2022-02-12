@@ -20,6 +20,8 @@ export const ProjectCard = (props) => {
       animateIn={`bounceIn${props.animationDirection}`}
       animateOut="fadeOut"
       animateOnce
+      duration={2}
+      delay={1}
     >
       <ProjectCardBody direction={props.animationDirection}>
         <Image>
@@ -29,10 +31,7 @@ export const ProjectCard = (props) => {
           <h1>{props.title}</h1>
           <ProjectDescription>{props.description}</ProjectDescription>
           <About>
-            <Tecnologies>
-              Tecnologies:aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaa
-              aaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaa {props.tecnologies}
-            </Tecnologies>
+            <Tecnologies>Tecnologies: {props.tecnologies}</Tecnologies>
             <Github href={props.github}>
               <AiFillGithub />
             </Github>
