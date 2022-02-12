@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useIsVisible } from "react-is-visible";
+import ScrollAnimation from "react-animate-on-scroll";
+
 import {
   ProjectsIntroBody,
   SideText,
@@ -8,9 +9,6 @@ import {
 } from "./styles";
 
 const ProjectsIntro = () => {
-  const nodeRef = useRef();
-  const isVisible = useIsVisible(nodeRef);
-
   return (
     <ProjectsIntroBody>
       {/* <SideFig>
@@ -19,10 +17,18 @@ const ProjectsIntro = () => {
         <Circle3></Circle3>
       </SideFig> */}
       <SideText>
-        <Text ref={nodeRef} className={`text${isVisible ? "animate" : ""}`}>
-          <h2>Find some of my </h2>
-          <h1>Projects</h1>
-          <h3>Here</h3>
+        <Text>
+          <ScrollAnimation
+            animateIn="bounceInUp"
+            animateOut="fadeOut"
+            animateOnce
+            duration={2}
+            delay={0}
+          >
+            <h2>Find some of my </h2>
+            <h1>Projects</h1>
+            <h3>Here</h3>
+          </ScrollAnimation>
         </Text>
       </SideText>
     </ProjectsIntroBody>

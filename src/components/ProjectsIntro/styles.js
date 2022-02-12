@@ -41,16 +41,7 @@ export const Text = styled.div`
     font-weight: 500;
   }
 
-  .text.animate {
+  /* .text.animate {
     animation: appear 1s ease-in 0.5s 1 backwards;
-  }
-
-  @keyframes appear {
-    from {
-      opacity: 0.1;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+  } */
 `;

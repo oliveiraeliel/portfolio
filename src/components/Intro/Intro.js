@@ -1,5 +1,7 @@
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
+import ScrollAnimation from "react-animate-on-scroll";
+
 import {
   IntroBody,
   SideImage,
@@ -17,7 +19,10 @@ const Intro = () => {
         <InfoWrapper>
           <h2>Hi, I'm Eliel</h2>
           <h1>and I code!</h1>
-          <Title>Web Developer</Title>
+          <ScrollAnimation animateIn="fadeIn" duration={2} delay={1}>
+            <Title>Web Developer</Title>
+          </ScrollAnimation>
+
           <Description>
             Just a System Developer Technician recent-graduated searching for
             new experiences. Currently, I'm developing some personal full-stack

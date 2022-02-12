@@ -52,44 +52,6 @@ export const Title = styled.h3`
   padding: 0 0 1rem;
   font-weight: 300;
 
-  animation: emerge 2s normal forwards ease-in-out;
-
-  @keyframes emerge {
-    from {
-      opacity: 0;
-    }
-    10% {
-      opacity: 0.1;
-    }
-    20% {
-      opacity: 0.2;
-    }
-    30% {
-      opacity: 0.3;
-    }
-    40% {
-      opacity: 0.4;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    60% {
-      opacity: 0.6;
-    }
-    70% {
-      opacity: 0.7;
-    }
-    80% {
-      opacity: 0.8;
-    }
-    90% {
-      opacity: 0.9;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
   @media (max-width: 800px) {
     font-size: 2.5rem;
   }
