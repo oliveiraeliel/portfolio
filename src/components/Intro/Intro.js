@@ -1,4 +1,5 @@
 import React from "react";
+import { AiFillGithub } from "react-icons/ai";
 import {
   IntroBody,
   SideImage,
@@ -6,6 +7,7 @@ import {
   InfoWrapper,
   Description,
   Title,
+  Github,
 } from "./styles";
 
 const Intro = () => {
@@ -19,11 +21,16 @@ const Intro = () => {
           <Description>
             Just a System Developer Technician recent-graduated searching for
             new experiences. Currently, I'm developing some personal full-stack
-            web projects in ReactJS and NodeJS.
+            web projects with ReactJS and NodeJS.
           </Description>
+          <Github href="https://github.com/oliveiraeliel">
+            <AiFillGithub />
+          </Github>
         </InfoWrapper>
       </Infos>
-      <SideImage>a</SideImage>
+      <SideImage>
+        {/* <img src="https://www.footyrenders.com/render/profile-10-neymar.png"></img> */}
+      </SideImage>
     </IntroBody>
   );
 };

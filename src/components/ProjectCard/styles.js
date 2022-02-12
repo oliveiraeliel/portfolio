@@ -4,9 +4,10 @@ export const ProjectCardBody = styled.div`
   background-color: var(--primary-color);
   width: 50%;
   height: 50%;
-
+  
   h1{
     font-size: 3rem;
+    margin: 0;
   }
 `;
 
