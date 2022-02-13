@@ -5,8 +5,8 @@ export const ProjectCardBody = styled.div`
   flex-direction: ${(props) =>
     props.direction == "Left" ? `row` : `row-reverse`};
   background-color: var(--primary-color);
-  width: 80vw;
-  height: 80vh;
+  width: 85vw;
+  height: 90vh;
   border-radius: 1rem;
   padding: 1rem;
   margin: auto;
@@ -18,17 +18,11 @@ export const ProjectCardBody = styled.div`
 
 export const Image = styled.div`
   flex: 1;
-  display: flex;
+  display: ${(props) => (props.isVisible ? "none" : "flex")};
   img {
     border-radius: 1rem;
-
-    @media (max-width: 756px) {
-      /* height: 40%; */
-      width: 90%;
-    }
-    @media (min-width: 756.1px) {
-      width: 100%;
-    }
+    max-width: 100%;
+    max-height: 100%;
   }
   justify-content: center;
   align-items: center;
@@ -52,16 +46,20 @@ export const ProjectDescription = styled.a`
   font-size: 1.4rem;
   font-weight: 300;
   color: white;
+  @media (max-width: 756px) {
+    display: none;
+  }
 `;
 
 export const About = styled.div`
   flex: 1;
   display: flex;
+  flex-direction: row;
   color: white;
 `;
 
 export const Tecnologies = styled.a`
-  flex: 4;
+  flex: 2;
   flex-wrap: wrap;
   font-size: 1rem;
   font-weight: 300;
@@ -69,7 +67,6 @@ export const Tecnologies = styled.a`
 
 export const Github = styled.a`
   flex: 1;
-
   text-decoration: none;
   color: var(--quinternary-color);
   font-size: 4rem;
@@ -77,7 +74,12 @@ export const Github = styled.a`
 
 export const Visit = styled.a`
   flex: 1;
-  /* text-decoration: none; */
   color: var(--quinternary-color);
   font-size: 2rem;
 `;
+export const Back = styled.div`
+  display: ${(props) => (props.isVisible ? "flex" : "none")};
+  flex-direction: column;
+`;
+
+export const ProjectDescriptionBack = styled.div``;
