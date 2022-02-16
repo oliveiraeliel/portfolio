@@ -4,7 +4,6 @@ export const ProjectsIntroBody = styled.section`
   height: 100vh;
   display: flex;
   flex-direction: row;
-
 `;
 
 export const SideText = styled.div`
@@ -13,7 +12,6 @@ export const SideText = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
   padding: 0.5rem;
 `;
 

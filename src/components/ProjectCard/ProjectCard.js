@@ -21,6 +21,8 @@ export const ProjectCard = (props) => {
       animateIn={`bounceIn${props.animationDirection}`}
       animateOut="fadeOut"
       animateOnce
+      duration={2}
+      delay={1}
     >
       <ProjectCardBody direction={props.animationDirection}>
         <Image>
@@ -54,6 +56,11 @@ export const ProjectCard = (props) => {
                 }
               })}
             </Tecnologies>
+
+          <ProjectDescription>{props.description}</ProjectDescription>
+          <About>
+            <Tecnologies>Tecnologies: {props.tecnologies}</Tecnologies>
+
             <Github href={props.github}>
               <AiFillGithub />
             </Github>

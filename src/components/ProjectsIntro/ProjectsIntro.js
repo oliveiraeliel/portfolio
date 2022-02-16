@@ -11,11 +11,6 @@ import {
 const ProjectsIntro = () => {
   return (
     <ProjectsIntroBody>
-      {/* <SideFig>
-        <Circle1></Circle1>
-        <Circle2></Circle2>
-        <Circle3></Circle3>
-      </SideFig> */}
       <SideText>
         <Text>
           <ScrollAnimation
