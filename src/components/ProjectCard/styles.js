@@ -5,8 +5,8 @@ export const ProjectCardBody = styled.div`
   flex-direction: ${(props) =>
     props.direction == "Left" ? `row` : `row-reverse`};
   background-color: var(--primary-color);
-  width: 80vw;
-  height: 80vh;
+  width: 85vw;
+  height: 90vh;
   border-radius: 1rem;
   padding: 1rem;
   margin: auto;
@@ -17,22 +17,17 @@ export const ProjectCardBody = styled.div`
 `;
 
 export const Image = styled.div`
-  flex: 1;
-  display: flex;
+  flex: 2;
+  display: ${(props) => (props.isVisible ? "none" : "flex")};
   img {
     border-radius: 1rem;
-
-    @media (max-width: 756px) {
-      /* height: 40%; */
-      width: 90%;
-    }
-    @media (min-width: 756.1px) {
-      width: 100%;
-    }
+    max-width: 100%;
+    max-height: 100%;
   }
   justify-content: center;
   align-items: center;
 `;
+
 export const ProjectInfos = styled.div`
   flex: 1;
   display: flex;
@@ -44,40 +39,56 @@ export const ProjectInfos = styled.div`
     font-weight: 300;
     margin: 0;
     text-align: center;
+    color: white;
   }
 `;
 
-export const ProjectDescription = styled.a`
-  flex: 2;
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: white;
-`;
-
-export const About = styled.div`
-  flex: 1;
+export const SubInfos = styled.div`
   display: flex;
-  color: white;
+  flex: 4;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
 `;
 
-export const Tecnologies = styled.a`
-  flex: 4;
+export const Tecnologies = styled.div`
+  flex: 3;
   flex-wrap: wrap;
-  font-size: 1rem;
+  font-size: 2rem;
+  color: white;
   font-weight: 300;
+  a {
+    margin: 0.5rem;
+  }
 `;
 
 export const Github = styled.a`
+  padding: 10px;
   flex: 1;
-
   text-decoration: none;
   color: var(--quinternary-color);
-  font-size: 4rem;
+  font-size: 3rem;
+
+  &:hover {
+    color: black;
+    opacity: 0.5;
+  }
 `;
 
 export const Visit = styled.a`
+  display: flex;
+  background-color: black;
+  border-radius: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   flex: 1;
-  /* text-decoration: none; */
+  text-decoration: none;
   color: var(--quinternary-color);
   font-size: 2rem;
+
+  &:hover {
+    opacity: 0.5;
+  }
 `;

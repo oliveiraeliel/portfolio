@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { AiFillGithub } from "react-icons/ai";
+import { IoLogoPython } from "react-icons/io";
+import { GrNode } from "react-icons/gr";
+import { FaReact } from "react-icons/fa";
 import ScrollAnimation from "react-animate-on-scroll";
-import { SiPython } from "react-icons/si";
-import { GrReactjs } from "react-icons/gr";
+
 import {
   ProjectCardBody,
-  ProjectDescription,
   Tecnologies,
   Github,
   Image,
   ProjectInfos,
-  About,
   Visit,
+  SubInfos,
 } from "./styles";
 
 export const ProjectCard = (props) => {
@@ -29,14 +30,42 @@ export const ProjectCard = (props) => {
         </Image>
         <ProjectInfos>
           <h1>{props.title}</h1>
+
+          <SubInfos>
+            <Tecnologies>
+              {props.tecnologies.map((row) => {
+                switch (row) {
+                  case "python":
+                    return (
+                      <a>
+                        <IoLogoPython />
+                      </a>
+                    );
+                  case "node":
+                    return (
+                      <a>
+                        <GrNode />
+                      </a>
+                    );
+                  case "react":
+                    return (
+                      <a>
+                        <FaReact />
+                      </a>
+                    );
+                }
+              })}
+            </Tecnologies>
+
           <ProjectDescription>{props.description}</ProjectDescription>
           <About>
             <Tecnologies>Tecnologies: {props.tecnologies}</Tecnologies>
+
             <Github href={props.github}>
               <AiFillGithub />
             </Github>
-            <Visit url={props.visit}>Visit</Visit>
-          </About>
+          </SubInfos>
+          <Visit href={props.visitURL}>Visit</Visit>
         </ProjectInfos>
       </ProjectCardBody>
     </ScrollAnimation>

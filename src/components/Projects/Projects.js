@@ -12,6 +12,8 @@ const Projects = (props) => {
         description={props.description}
         animationDirection={props.animationDirection}
         img={props.img}
+        visitURL={props.visitURL}
+        tecnologies={props.tecnologies}
       />
     </ProjectsBody>
   );

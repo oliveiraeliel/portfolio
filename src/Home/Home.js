@@ -16,16 +16,15 @@ export const Home = () => {
         } else {
           direction = "Left";
         }
-        console.log(row.visitURL);
         return (
           <Projects
+            visitURL={row.visitURL}
             title={row.title}
-            description={row.description}
             github={row.github}
             animationDirection={direction}
             img={row.img}
             tecnologies={row.tecnologies}
-            visit={row.github}
+            key={i}
           />
         );
       })}
