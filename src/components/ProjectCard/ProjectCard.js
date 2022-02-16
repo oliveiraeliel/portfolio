@@ -56,10 +56,6 @@ export const ProjectCard = (props) => {
                 }
               })}
             </Tecnologies>
-
-          <ProjectDescription>{props.description}</ProjectDescription>
-            <Tecnologies>Tecnologies: {props.tecnologies}</Tecnologies>
-
             <Github href={props.github}>
               <AiFillGithub />
             </Github>
