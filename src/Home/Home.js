@@ -5,7 +5,6 @@ import { Intro, Projects, ProjectsIntro } from "../components/";
 import projects from "../utils/projects.json";
 
 export const Home = () => {
-  // console.log(projects[0].tecnologies);
   return (
     <div>
       <Intro />
@@ -19,13 +18,12 @@ export const Home = () => {
         }
         return (
           <Projects
+            visitURL={row.visitURL}
             title={row.title}
-            description={row.description}
             github={row.github}
             animationDirection={direction}
             img={row.img}
             tecnologies={row.tecnologies}
-            visit={row.github}
             key={i}
           />
         );
