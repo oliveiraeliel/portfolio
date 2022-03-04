@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.83afb0a3.js",
+    "main.js": "/portfolio/static/js/main.f259e82a.js",
     "static/media/pomodoro.png": "/portfolio/static/media/pomodoro.22aff8f0a612c21ed442.png",
     "index.html": "/portfolio/index.html",
-    "main.83afb0a3.js.map": "/portfolio/static/js/main.83afb0a3.js.map"
+    "main.f259e82a.js.map": "/portfolio/static/js/main.f259e82a.js.map"
   },
   "entrypoints": [
-    "static/js/main.83afb0a3.js"
+    "static/js/main.f259e82a.js"
   ]
 }
